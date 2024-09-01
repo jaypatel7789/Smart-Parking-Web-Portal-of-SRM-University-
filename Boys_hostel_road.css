@@ -1,0 +1,57 @@
+    body {
+        background-image: url('3.png');
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #button-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+
+    button {
+        height: 55px;
+        width: 29px;
+        margin-top: 380px;
+        margin-left: 10px;
+        background-color: green;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: lightgreen;
+    }
+
+    .selected {
+        background-color: red !important;
+        color: white;
+    }
+
+    #submit-btn {
+        height: 60px;
+        width: 100px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none; /* Added to hide initially */
+        position: absolute; /* Adjust position freely */
+        top: 450px; /* Example position, adjust as needed */
+        left: 950px; /* Example position, adjust as needed */
+    }
+
+    #submit-btn:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+    }

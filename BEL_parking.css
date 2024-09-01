@@ -1,0 +1,81 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0 url('1.png') no-repeat center center; /* Add your image here */
+    background-size: cover; /* Cover the entire page with the image */
+}
+.parking-grid {
+    position: absolute; /* Use fixed if you want it to stay in place on scroll */
+    top: 150px; /* Distance from the top of the ancestor or page */
+    left: 550px; /* Distance from the left of the ancestor or page */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 10px;
+    background-size: cover;
+    background: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px; /* Adjust based on your design */
+}
+
+
+.parking-row {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Default to 10 columns */
+    gap: 6px;
+}
+
+/* Unique spacing for specific rows */
+.spacing-row-3,
+.spacing-row-5,
+.spacing-row-6,
+.spacing-row-7,
+.spacing-row-9 {
+    justify-content: space-around; /* Or use space-around or space-between as preferred */
+}
+.parking-slot {
+    padding: 5px;
+    background: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 24px; /* Adjust based on your preference */
+    height: 48px; /* Adjust based on your preference */
+}
+
+.parking-slot:hover {
+    background: lightgreen;
+}
+
+.parking-slot.booked {
+    background: red; /* Color for booked slot */
+}
+
+#submit-booking {
+    display: none; /* Initially hidden */
+    position: absolute; /* Or absolute, depending on need */
+    bottom: 300px;
+    right: 100px;
+    transform: translateX(-50%); /* Adjust for exact centering */
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-booking:hover{
+    background-color: lightgreen;
+}
+
+.selected{
+    background-color: red;
+}
+

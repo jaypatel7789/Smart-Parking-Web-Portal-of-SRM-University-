@@ -1,0 +1,72 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.background-image {
+    background-image: url('4.png'); /* Adjust path as needed */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slots-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the space between the slots and the submit button */
+}
+
+.parking-slots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 6px;
+    align-items: center; /* Aligns slots vertically in the center */
+    padding-left: 0px;
+    padding-right: 80px;
+}
+
+.slot {
+    width: 25px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    margin-top: -25px;
+    align-items: center;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slot:hover {
+    background-color: lightgreen; /* Change color on hover */
+}
+.submit-button-container {
+    /* Example positioning: bottom-right of the page. Adjust as needed */
+    position: absolute;
+    bottom: 350px;
+    right: 20px;
+    /* Add more properties here to adjust the position */
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: lightblue;
+}

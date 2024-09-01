@@ -1,0 +1,76 @@
+body {
+    background-image: url('3.png');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif; /* Ensuring a consistent font is used */
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+button {
+    height: 55px;
+        width: 29px;
+        margin-top: 380px;
+        margin-left: 10px;
+        background-color: green;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        cursor: pointer;
+}
+
+button:hover {
+    background: lightgreen;
+}
+
+.selected {
+    background-color: red !important;
+    color: white;
+}
+
+#submit-btn {
+    height: 60px;
+    width: 100px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.booking-message, .timer-message {
+    text-align: center;
+    margin: 20px 0;
+    color:white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#booking-message {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#timer-message {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}

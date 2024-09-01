@@ -1,0 +1,64 @@
+body {
+    background-image: url('2.png');
+    background-size: 100% auto; /* Adjust the width to 100% of the element, and height will be set automatically to maintain the aspect ratio */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+
+}
+
+/* Specific styles for first-row and second-row could go here, if needed.
+   For now, they inherit the same styles as .button-row. */
+
+button {
+    height: 60px;
+    width: 29px;
+    margin-top: 168px;
+    margin-left: 6px;
+    margin-right: 5px;
+    margin-bottom: -9px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background: lightgreen;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;   
+}
+.selected {
+    background-color: red !important; /* Override other styles to show selection */
+    color: white;
+}
+#submitBtn {
+    height: 60px;
+    width: 100px;
+    margin-top: 20px; /* Adjust as necessary */
+    padding: 10px 20px;
+    font-size: 16px; /* Adjust as necessary */
+    background-color: #007bff; /* Example color; adjust as necessary */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitBtn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
